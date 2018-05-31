@@ -1,0 +1,38 @@
+{
+  "name": "birla",
+  "description": "CLI tool to easily create new file-structure scaffolds from template directories.",
+  "version": "1.0.0",
+  "main": "birla.js",
+  "bin": {
+    "birla": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "birla.js"
+  ],
+  "scripts": {
+    "demo": "npm start --prefix demo",
+    "patch-release": "npm version patch && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scaffolder",
+    "boiler",
+    "react",
+    "templater",
+    "cli",
+    "component",
+    "templating",
+    "copy",
+    "generate",
+    "generator",
+    "productivity"
+  ],
+  "author": "Aditya Agarwal @itaditya (adi.surge.sh) (twitter.com/dev__adi)",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "fs-extra": "^6.0.1"
+  },
+  "devDependencies": {}
+}
