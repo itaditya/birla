@@ -2,12 +2,16 @@
 
 > Birla is a CLI tool to easily create new file-structure scaffolds from template directories.
 
+### Why did I make this ?
+
+I was wasting a lot of time, creating files and folders whenever I made new components in React or Angular. Now, I just create a template for the component and using `birla` generate new components easily. `birla` will take care of changing file names and their content too. This is so much better than copy paste or code snippets.
+
 ## Advantages
 
 1. Supercharge your productivity.
 1. Maintain consistent structure of modules/components etc. across teams.
 1. Write once, use 1000 times.
-1. Be the Cool Guy!!
+1. Focus on building features, not files.
 
 ## How To Use ?
 
@@ -54,3 +58,9 @@ const Button = () => {
 
 export default Button;
 ```
+
+### Pitfalls
+
+* If the file already exists, it'll be overwritten. I'm working on preventing that.
+
+Inspired from [remmy](https://github.com/colshacol/remmy/)
