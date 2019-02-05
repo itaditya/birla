@@ -1,7 +1,7 @@
 {
   "name": "birla",
   "description": "CLI tool to easily create new file-structure scaffolds from template directories.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "birla.js",
   "bin": {
     "birla": "./index.js"
