@@ -22,21 +22,26 @@ I was wasting a lot of time, creating files and folders whenever I made new comp
 
 ### Example - 
 
+#### Brief Idea:
+For each template we create a folder inside `birla-templates`. In a template we can use $NAME to substitute it with the name provided in CLI.
+
+We can also force convert the case of name with _c (camel), _p (pascal), _s (snake), _h (hyphen).
+
 #### Sample Directory Structure:
 ```
 birla-templates
     └───simple-component
-        └───$NAME
-                $NAME.css
+        └───$NAME_s
+                $NAME_h.css
                 $NAME.js
                 index.js
 ```
 
 #### Sample File
 ```js
-// /birla-templates/simple-component/$NAME/$NAME.js
+// /birla-templates/simple-component/$NAME_s/$NAME.js
 const $NAME = () => {
-  console.log('$NAME');
+  console.log('$NAME_h');
 }
 
 export default $NAME;
@@ -45,22 +50,22 @@ export default $NAME;
 
 #### Sample Instruction
 ```
-birla -n Button -t simple-component app/components/
+birla -n NewComponent -t simple-component app/components/
 ```
 
-This will create a folder named `Button` inside `app/components/` which will have 3 files `Button.css`, `Button.js`, `index.js`. In each file $NAME will be replaced by `Button`.
+This will create a folder named `new_component` inside `app/components/` which will have 3 files `new-component.css`, `NewComponent.js`, `index.js`. In each file $NAME will be replaced by `NewComponent`. $NAME_h with `new-component` and so on.
 
-It means that `app/components/Button/Button.js` will look like -
+It means that `app/components/new_component/NewComponent.js` will look like -
 ```js
-const Button = () => {
-  console.log('Button');
+const NewComponent = () => {
+  console.log('new-component');
 }
 
-export default Button;
+export default NewComponent;
 ```
 
 ### Pitfalls
 
-* If the file already exists, it'll be overwritten. I'm working on preventing that.
+* If the file/folder already exists, birla will fail.
 
 Inspired from [remmy](https://github.com/colshacol/remmy/)

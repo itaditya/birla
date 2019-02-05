@@ -1,5 +1,9 @@
 const birla = require('../birla')
 
-(async () => {
-  await birla('Button', 'simple-component', 'app/components/')
-})()
+const genFiles = async () => {
+  const folderName = 'long_task';
+  // const folderName = 'Button' + Math.random();
+  await birla(folderName, 'simple-component', 'app/components/experiment');
+}
+
+genFiles();
