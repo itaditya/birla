@@ -4,7 +4,7 @@
 
 ### Why did I make this ?
 
-I was wasting a lot of time, creating files and folders whenever I made new components in React or Angular. Now, I just create a template for the component and using `birla` generate new components easily. `birla` will take care of changing file names and their content too. This is so much better than copy paste or code snippets.
+I was wasting a lot of time, creating files and folders whenever I made new components in React or Angular. Now, I just create a template for the component and using `birla` generate new components easily. `birla` will take care of changing file names and their content too. This is so much better than copy-paste or code snippets.
 
 ## Advantages
 
